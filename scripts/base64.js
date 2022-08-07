@@ -34,10 +34,10 @@ function hex_to_b64(hex)
         bytes.push(val);
 	if (bytes.length == 3 || i == hex.length-2) {
 	    let sum = 0;
-            for (let j = 0; j < 3 && j < bytes.length; j++) {
+            for (let j = 0; j < bytes.length; j++) {
                 sum += (bytes[j] << (8 * (2 - j)));
 	    }
-	    for (let j = 0; j < 4; j++) {
+	    for (let j = 0; j < (1 + bytes.length); j++) {
 	        const bitmask = 0xFC0000;
 	        let b64val = (sum & bitmask) >> 18;
 		str += b64encode[b64val];
@@ -46,6 +46,9 @@ function hex_to_b64(hex)
 	    bytes = [];
 	    val = 0;
 	}
+    }
+    for (let i = 0; i < str.length % 4; i++) {
+        str += "=";
     }
     return str;
 }
