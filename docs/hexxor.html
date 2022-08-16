@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,7 +8,6 @@
         <meta name="viewport" content="width=device-width">
         <link href="./css/style.css" rel="stylesheet"/>
     </head>
-
     <nav class="navbar">
         <div id="menu-button" onclick="toggleSidebar()">
             <div class="menu-line"></div>
@@ -17,6 +17,7 @@
         <img height=30px width=30px style="padding-right: 7px; padding-left: 15px;" alt="Greek letter sigma" src="./assets/sigma.png"/>
         <h1 style="padding-bottom: 3px;"><a class="navbar-title" href="./index.html">suprasignal.com</a></h1>
     </nav>
+
 
     <body>
         <div id="grid-container">
@@ -50,34 +51,35 @@
                     </ul>
                 </div>
             </div>
-            <div class="content grid-item">
-                <h3 style="margin:0;"><u>Hex literal XOR</u></h3>
-                <div style="background-color: ghostwhite; border-color: gainsboro;" class="form-block">
-                    <b>Hex literal XOR</b>
-                    <div class="table-form">
-                        <div style="display: table-row;">
-                            <label>Hex literal 1: </label>
-                            <input id="input" class="small-number-input" name="input"/>
-                        </div>
-                        <div style="display: table-row;">
-                            <label>Hex literal 2: </label>
-                            <input id="input" class="small-number-input" name="input"/>
-                        </div>
 
-                        <div style="display: table-row;">
-                            <label style="vertical-align:text-top">Result:</label>
-                            <textarea id="output" style="width: 222px; height: 208px; resize:none" data-role="none" readonly="readonly"></textarea>
-                        </div>
-                        <div>
-                            <input type="button" onclick="button_click();" value="Convert"/>
-                        </div>
-                    </div>
+<div class="content grid-item">
+    <div class="content grid-item">
+        <h3 style="margin:0;"><u>Hex literal XOR</u></h3>
+        <div style="background-color: ghostwhite; border-color: gainsboro;" class="form-block">
+            <b>Hex literal XOR</b>
+            <div class="table-form">
+                <div style="display: table-row;">
+                    <label>Hex literal 1: </label>
+                    <input id="input" class="small-number-input" name="input"/>
                 </div>
-                <script src="./scripts/base64.js"></script>
+                <div style="display: table-row;">
+                    <label>Hex literal 2: </label>
+                    <input id="input" class="small-number-input" name="input"/>
+                </div>
+
+                <div style="display: table-row;">
+                    <label style="vertical-align:text-top">Result:</label>
+                    <textarea id="output" style="width: 222px; height: 208px; resize:none" data-role="none" readonly="readonly"></textarea>
+                </div>
+                <div>
+                    <input type="button" onclick="button_click();" value="Convert"/>
+                </div>
             </div>
-        <script src="./scripts/display.js"></script>
+        </div>
+    <script src="./scripts/base64.js"></script>
+</div>
+
+        <script src="./js/display.js"></script>
     </body>
 </html>
-
-
 
