@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Free Online Math and Computer Science Tools</title>
+        <meta name="description" content="Your number one online resource for free math and computer science calculators and tools, free with no ads."/>
+        <meta charset="utf8"/>
+        <meta name="viewport" content="width=device-width">
+        <link href="./css/style.css" rel="stylesheet"/>
+    </head>
+    <nav class="navbar">
+        <div id="menu-button" onclick="toggleSidebar()">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+        <img height=30px width=30px style="padding-right: 7px; padding-left: 15px;" alt="Greek letter sigma" src="./assets/sigma.png"/>
+        <h1 style="padding-bottom: 3px;"><a class="navbar-title" href="./index.html">suprasignal.com</a></h1>
+    </nav>
+
+    <body>
+        <div id="grid-container">
+            <div id="sidebar-container" class="grid-item">
+                <div id="sidebar">
+                    <div class="sidebar-top">
+                        <text style="padding: 5px; padding-left: 5px; padding-right: 108px; background-color:rgba(140,140,255,.5) ;">Navigation</text>
+                    </div>
+                    <text class="sidebar-header">Math:</text>
+                    <ul class="sidebar-list">
+                        <li><a href="./prime.html">Primality test</a></li>
+                        <li><a href="./factorial.html">Factorial</a></li>
+                    </ul>
+                    <text class="sidebar-header">Programming:</text>
+                    <ul class="sidebar-list">
+                        <li><a href="./base64.html">Hex to base64</a></li>
+                    </ul>
+                    <text class="sidebar-header">Cryptography:</text>
+                    <ul class="sidebar-list">
+                    </ul>
+                    <text class="sidebar-header">Graphics:</text>
+                    <ul class="sidebar-list">
+                    </ul>
+                    <text class="sidebar-header">Audio:</text>
+                    <ul class="sidebar-list">
+                    </ul>
+                    <text class="sidebar-header">Resources:</text>
+                    <ul class="sidebar-list">
+                        <li><a href="./links.html">Links</a></li>
+                        <li><a href="./about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content grid-item">
+                <div class="content grid-item">
+                    <h3 style="margin:0;"><u>Factorial calculator</u></h3>
+                    <div class="form-block" style="background-color:rgb(210 255 210); border-color:limegreen;">
+                        <b>Calculate factorial (n!) of an integer</b>
+                        <form class="table-form" action="/util/factorial" method="get">
+                            <div style="display: table-row;">
+                                <label for = "number">Enter integer: </label>
+                                <input id = "number-field" class="small-number-input" name="input">
+                            </div>
+                            <div style="display: table-row;">
+                                <label style="vertical-align:text-top">Result:</label>
+                                <textarea style="width: 222px; height: 208px; resize:none" data-role="none" readonly="readonly"></textarea>
+                            </div>
+                            <div>
+                                <input type="button" onclick="factorial();" value="Calculate"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <script src="./scripts/display.js"></script>
+        <script src="./scripts/factorial.js"></script>
+    </body>
+</html>
+
