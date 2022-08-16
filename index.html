@@ -1,3 +1,4 @@
+@macro(header)
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,7 +8,6 @@
         <meta name="viewport" content="width=device-width">
         <link href="./css/style.css" rel="stylesheet"/>
     </head>
-
     <nav class="navbar">
         <div id="menu-button" onclick="toggleSidebar()">
             <div class="menu-line"></div>
@@ -17,7 +17,8 @@
         <img height=30px width=30px style="padding-right: 7px; padding-left: 15px;" alt="Greek letter sigma" src="./assets/sigma.png"/>
         <h1 style="padding-bottom: 3px;"><a class="navbar-title" href="./index.html">suprasignal.com</a></h1>
     </nav>
-
+@endmacro
+@macro(body)
     <body>
         <div id="grid-container">
             <div id="sidebar-container" class="grid-item">
@@ -50,6 +51,7 @@
                     </ul>
                 </div>
             </div>
+@endmacro
             <div class="content grid-item">
                 <h3 style="margin:0;"><u>Welcome to suprasignal.com!!! </u></h3>
                 <p>
@@ -60,11 +62,10 @@
                 	<h3 id="count" style="text-align:center">0</h3>
                 	<input type="button" value="Count!" onclick=count()></input>
                 </div>
-                <script src="./scripts/count.js"></script>
+                <script src="./js/count.js"></script>
             </div>
-        <script src="./scripts/display.js"></script>
+@macro(footer)
+        <script src="./js/display.js"></script>
     </body>
 </html>
-
-
-
+@endmacro

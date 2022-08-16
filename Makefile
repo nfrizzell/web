@@ -1,0 +1,7 @@
+SCRIPT=webmacro/webmacro.py
+FLAGS=
+HTML=index.html factorial.html base64.html hexxor.html
+OUTPUT_DIR=docs/
+
+make:
+	./$(SCRIPT) $(HTML) $(OUTPUT_DIR)
