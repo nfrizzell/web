@@ -1,22 +1,25 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <title>SupraSignal</title>
-        <meta name="description" content="Your number-one online resource for free math and computer science calculators and tools, free with no ads.">
-        <meta charset="utf8">
-        <meta name="viewport" content="width=device-width">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
 
-    <body><nav class="navbar">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<title>suprasignal</title>
+        <meta name="description" content="Your number-one online resource for free math and computer science calculators and tools, free with no ads."/>
+        <meta charset="utf8"/>
+        <meta name="viewport" content="width=device-width">
+        <link href="./css/style.css" rel="stylesheet"/>
+    </head>
+    <nav class="navbar">
         <div id="menu-button" onclick="toggleSidebar()">
             <div class="menu-line"></div>
             <div class="menu-line"></div>
             <div class="menu-line"></div>
         </div>
-        <img style="padding-right: 7px; padding-left: 15px;" alt="Greek letter sigma" src="assets/sigma.png" width="30px" height="30px">
-        <h1 style="padding-bottom: 3px;"><a class="navbar-title" href="https://suprasignal.com/index.html">suprasignal.com</a></h1>
+        <img height=25px width=35px style="padding-right: 10px; padding-left: 15px;" alt="Greek letter sigma" src="./assets/sigma.png"/>
+	<h1 style="padding-bottom: 3px;"><a class="navbar-title" href="./index.html">suprasignal.com</a></h1>
     </nav>
+
+
+    <body>
         <div id="grid-container">
             <div id="sidebar-container" class="grid-item">
                 <div id="sidebar">
@@ -25,12 +28,13 @@
                     </div>
                     <text class="sidebar-header">Math:</text>
                     <ul class="sidebar-list">
-                        <li><a href="https://suprasignal.com/prime.html">Primality test</a></li>
-                        <li><a href="https://suprasignal.com/factorial.html">Factorial</a></li>
+                        <li><a href="./prime.html">Primality test</a></li>
+                        <li><a href="./factorial.html">Factorial</a></li>
                     </ul>
                     <text class="sidebar-header">Programming:</text>
                     <ul class="sidebar-list">
-                        <li><a href="https://suprasignal.com/base64.html">Hex to base64</a></li>
+                        <li><a href="./base64.html">Hex to base64</a></li>
+                        <li><a href="./hexxor.html">Hex XOR</a></li>
                     </ul>
                     <text class="sidebar-header">Cryptography:</text>
                     <ul class="sidebar-list">
@@ -43,30 +47,34 @@
                     </ul>
                     <text class="sidebar-header">Resources:</text>
                     <ul class="sidebar-list">
-                        <li><a href="https://suprasignal.com/links.html">Links</a></li>
-                        <li><a href="https://suprasignal.com/about.html">About</a></li>
+                        <li><a href="./links.html">Links</a></li>
+                        <li><a href="./about.html">About</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="content grid-item">
-                <h3 style="margin:0;"><u>Hex to base64</u></h3>
-                <div style="background-color: ghostwhite; border-color: gainsboro;" class="form-block">
-                    <b>Convert hex literal to base64 encoding</b>
-                    <div class="table-form">
-                        <div style="display: table-row;">
-                            <label>Hex string: </label>
-                            <input id="input" class="small-number-input" name="input">
-                        </div>
-                        <div style="display: table-row;">
-                            <label style="vertical-align:text-top">Result:</label>
-                            <textarea id="output" style="width: 222px; height: 208px; resize:none" data-role="none" readonly="readonly"></textarea>
-                        </div>
-                        <div>
-                            <input type="button" onclick="button_click();" value="Convert">
-                        </div>
-                    </div>
-                </div>
-                <script src="js/base64.js"></script>
+
+<div class="content grid-item">
+    <h3 style="margin:0;"><u>Hex to base64</u></h3>
+    <div style="background-color: ghostwhite; border-color: gainsboro;" class="form-block">
+        <b>Convert hex literal to base64 encoding</b>
+        <div class="table-form">
+            <div style="display: table-row;">
+                <label>Hex string: </label>
+                <input id="input" class="small-number-input" name="input">
             </div>
-        <script src="js/display.js"></script>
-</div></body></html>
+            <div style="display: table-row;">
+                <label style="vertical-align:text-top">Result:</label>
+                <textarea id="output" style="width: 222px; height: 208px; resize:none" data-role="none" readonly="readonly"></textarea>
+            </div>
+            <div>
+                <input type="button" onclick="button_click();" value="Convert">
+            </div>
+        </div>
+    </div>
+    <script src="js/base64.js"></script>
+</div>
+
+        <script src="./js/display.js"></script>
+    </body>
+</html>
+
