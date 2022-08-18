@@ -55,25 +55,24 @@
             </div>
 
 <div class="content grid-item">
-     <div class="content grid-item">
-         <h3 style="margin:0;"><u>Factorial calculator</u></h3>
-         <div class="form-block" style="background-color:rgb(210 255 210); border-color:limegreen;">
-             <b>Calculate factorial (n!) of an integer</b>
-             <form class="table-form" action="/util/factorial" method="get">
-                 <div class="table-form-row">
-                     <label class="table-form-label">Enter integer: </label>
-                     <input id = "number-field" class="table-form-input small-number-input" name="input">
-                 </div>
-                 <div class="table-form-row">
-                     <label class="table-form-label">Result:</label>
-                     <textarea class="table-form-textbox" data-role="none" readonly="readonly"></textarea>
-                 </div>
-                 <div>
-                     <input type="button" class="table-form-input" onclick="factorial();" value="Calculate"/>
-                 </div>
-             </form>
-         </div>
-     </div>
+    <h3 style="margin:0;"><u>Primality test</u></h3>
+    <div class="form-block" style="background-color:rgb(210 255 210); border-color:limegreen;">
+        <b>Test a positive integer to see if it is prime</b>
+        <div class="table-form">
+            <div class="table-form-row">
+                <label class="table-form-label">Enter integer: </label>
+                <input id="number-field" class="table-form-input small-number-input" name="input">
+            </div>
+            <div class="table-form-row">
+                <label class="table-form-label">Result:</label>
+                <input id="result-field" class="table-form-input small-number-input" readonly>
+            </div>
+            <div>
+                <input type="button" onclick="button_click();" value="Check">
+            </div>
+        </div>
+    </div>
+    <script src="js/prime.js"></script>
 </div>
 
         <script src="./js/display.js"></script>

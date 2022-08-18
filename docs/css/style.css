@@ -180,6 +180,15 @@ html
 	margin-top: 5px;
 }
 
+.table-form-textbox
+{
+	margin-bottom: 5px;
+	margin-top: 5px;
+	width: 222px;
+       	height: 208px;
+       	resize:none
+}
+
 .small-number-input
 {
 	width: 220px;

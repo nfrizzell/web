@@ -8,14 +8,14 @@
              <form class="table-form" action="/util/factorial" method="get">
                  <div class="table-form-row">
                      <label class="table-form-label">Enter integer: </label>
-                     <input id = "number-field" class="small-number-input" name="input">
+                     <input id = "number-field" class="table-form-input small-number-input" name="input">
                  </div>
                  <div class="table-form-row">
                      <label class="table-form-label">Result:</label>
-                     <textarea style="width: 222px; height: 208px; resize:none" data-role="none" readonly="readonly"></textarea>
+                     <textarea class="table-form-textbox" data-role="none" readonly="readonly"></textarea>
                  </div>
                  <div>
-                     <input type="button" onclick="factorial();" value="Calculate"/>
+                     <input type="button" class="table-form-input" onclick="factorial();" value="Calculate"/>
                  </div>
              </form>
          </div>
