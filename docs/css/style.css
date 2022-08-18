@@ -70,7 +70,7 @@ html
 	background-color: lavender;
 	border: 1px solid mediumslateblue;
 	border-radius: 5px;
-	max-height: 505px;
+	height: fit-content;
 }
 
 #hamburger-menu-button
@@ -168,8 +168,9 @@ html
 .table-form-label
 {
         display: table-cell;
+	vertical-align: middle;
 	margin-bottom: 5px;
-	margin-top: 5px;
+	margin-top: 10px;
 	padding-right: 10px;
 }
 
