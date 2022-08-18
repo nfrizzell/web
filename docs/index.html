@@ -9,10 +9,10 @@
         <link href="./css/style.css" rel="stylesheet"/>
     </head>
     <nav class="navbar">
-        <div id="menu-button" onclick="toggleSidebar()">
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
-            <div class="menu-line"></div>
+        <div id="hamburger-menu-button" onclick="toggleSidebar()">
+            <div class="hamburger-menu-line"></div>
+            <div class="hamburger-menu-line"></div>
+            <div class="hamburger-menu-line"></div>
         </div>
         <img height=25px width=35px style="padding-right: 10px; padding-left: 15px;" alt="Greek letter sigma" src="./assets/sigma.png"/>
 	<h1 style="padding-bottom: 3px;"><a class="navbar-title" href="./index.html">suprasignal.com</a></h1>
@@ -23,7 +23,7 @@
         <div id="grid-container">
             <div id="sidebar-container" class="grid-item">
                 <div id="sidebar">
-                    <div class="sidebar-top">
+                    <div id="sidebar-top">
                         <text style="padding: 5px; padding-left: 5px; padding-right: 108px; background-color:rgba(140,140,255,.5) ;">Navigation</text>
                     </div>
                     <text class="sidebar-header">Math:</text>
@@ -38,6 +38,7 @@
                     </ul>
                     <text class="sidebar-header">Cryptography:</text>
                     <ul class="sidebar-list">
+                        <li><a href="./cipher1.html">Single-byte XOR</a></li>
                     </ul>
                     <text class="sidebar-header">Graphics:</text>
                     <ul class="sidebar-list">

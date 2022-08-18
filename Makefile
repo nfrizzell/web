@@ -1,6 +1,6 @@
 SCRIPT=webmacro/webmacro.py
 FLAGS=
-HTML=index.html factorial.html base64.html hexxor.html
+HTML=index.html factorial.html base64.html hexxor.html cipher1.html
 OUTPUT_DIR=docs
 
 make:

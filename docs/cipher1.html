@@ -1,4 +1,4 @@
-@macro(header)
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,8 +17,8 @@
         <img height=25px width=35px style="padding-right: 10px; padding-left: 15px;" alt="Greek letter sigma" src="./assets/sigma.png"/>
 	<h1 style="padding-bottom: 3px;"><a class="navbar-title" href="./index.html">suprasignal.com</a></h1>
     </nav>
-@endmacro
-@macro(body)
+
+
     <body>
         <div id="grid-container">
             <div id="sidebar-container" class="grid-item">
@@ -53,21 +53,29 @@
                     </ul>
                 </div>
             </div>
-@endmacro
-            <div class="content grid-item">
-                <h3 style="margin:0;"><u>Welcome to suprasignal.com!!! </u></h3>
-                <p>
-                Here you will find various math, computer science, and programming focused 
-                tools and calculators, as well as other useful resources.
-                </p>
-                <div style="background-color: ghostwhite; border-color: gainsboro;" class="form-block">
-                	<h3 id="count" style="text-align:center">0</h3>
-                	<input type="button" value="Count!" onclick=count()></input>
-                </div>
-                <script src="./js/count.js"></script>
+
+<div class="content grid-item">
+    <h3 style="margin:0;"><u>Hex to base64</u></h3>
+    <div style="background-color: ghostwhite; border-color: gainsboro;" class="form-block">
+        <b>"Encrypt" text with single-byte XOR</b>
+        <div class="table-form">
+            <div class="table-form-row">
+                <label class="table-form-label">Input: </label>
+                <textarea id="input" style="width: 222px; height: 208px; resize:none" data-role="none"></textarea>
             </div>
-@macro(footer)
+            <div class="table-form-row">
+                <label class="table-form-label">Output: </label>
+                <textarea id="output" style="width: 222px; height: 208px; resize:none" data-role="none" readonly="readonly"></textarea>
+            </div>
+            <div>
+                <input type="button" onclick="button_click();" value="Convert">
+            </div>
+        </div>
+    </div>
+    <script src="js/base64.js"></script>
+</div>
+
         <script src="./js/display.js"></script>
     </body>
 </html>
-@endmacro
+
