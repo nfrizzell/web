@@ -151,7 +151,7 @@ html
 	margin-right: 10px;
 	margin-bottom: -20px;
 	height: fit-content;
-	width: 350px;
+	width: 325px;
 	max-width: 400px;
 	padding:10px;
 	border: 1px solid black;
@@ -167,13 +167,12 @@ html
         margin-top: 30px;
 	margin-right: 10px;
 	margin-bottom: -20px;
-	width: 350px;
-	min-height: 300px;
+	width: 325px;
+	height: fit-content;
 	padding:10px;
         row-gap: 10px;
 	column-gap: 10px;
-	border-radius: 3px;
-	background-image: linear-gradient(to top, rgba(140,140,255,0), rgba(140,140,255,.4));
+	background-image: linear-gradient(to top, rgba(140,140,255,0), rgba(140,140,255,.3));
 
 }
 

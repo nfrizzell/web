@@ -13,33 +13,17 @@
                 <label class="table-form-label">Byte: </label>
 		<input id="input2" class="small-number-input table-form-input" data-role="none">
             </div>
-            <div class="table-form-row">
-                <label class="table-form-label">Output: </label>
-                <textarea id="output" class="table-form-textbox" data-role="none" readonly="readonly"></textarea>
-            </div>
             <div>
-                <input type="button" onclick="button_click();" value="Encrypt">
-            </div>
-        </div>
-    </div>
-    <div style="background-color: ghostwhite; border-color: gainsboro;" class="form-block">
-        <b>"Decrypt" text with single-byte XOR</b>
-        <div class="table-form">
-            <div class="table-form-row">
-                <label class="table-form-label">Input: </label>
-                <textarea id="input" class="table-form-textbox" data-role="none"></textarea>
-            </div>
-            <div>
-                <input type="button" onclick="button_click();" value="Decrypt">
+                <input type="button" onclick="button_click();" value="XOR">
             </div>
         </div>
     </div>
     <div class="description-block">
         <b>Description</b>
 	<p>
+            XOR an entire hex literal string against a single hex literal byte
 	</p>
     </div>
-
-    <script src="js/cipher1.js"></script>
+    <script src="js/sbxor.js"></script>
 </div>
 @expand(footer)
