@@ -54,25 +54,47 @@
                 </div>
             </div>
 
-<h3 class="content-header grid-item" ><u>Hex to base64</u></h3>
+<h3 class="content-header grid-item" ><u>Single-byte XOR</u></h3>
 <div class="content grid-item">
     <div style="background-color: ghostwhite; border-color: gainsboro;" class="form-block">
-        <b>Convert hex literal to base64 encoding</b>
+        <b>"Encrypt" text with single-byte XOR</b>
         <div class="table-form">
             <div class="table-form-row">
-                <label class="table-form-label">Hex string: </label>
-                <input id="input" class="table-form-input small-number-input" name="input">
+                <label class="table-form-label">Input: </label>
+                <textarea id="input" class="table-form-textbox" data-role="none"></textarea>
+            </div>
+             <div class="table-form-row">
+                <label class="table-form-label">Byte: </label>
+		<input id="input2" class="small-number-input table-form-input" data-role="none">
             </div>
             <div class="table-form-row">
-                <label class="table-form-label">Result:</label>
+                <label class="table-form-label">Output: </label>
                 <textarea id="output" class="table-form-textbox" data-role="none" readonly="readonly"></textarea>
             </div>
             <div>
-                <input class="table-form-input" type="button" onclick="button_click();" value="Convert">
+                <input type="button" onclick="button_click();" value="Encrypt">
             </div>
         </div>
     </div>
-    <script src="js/base64.js"></script>
+    <div style="background-color: ghostwhite; border-color: gainsboro;" class="form-block">
+        <b>"Decrypt" text with single-byte XOR</b>
+        <div class="table-form">
+            <div class="table-form-row">
+                <label class="table-form-label">Input: </label>
+                <textarea id="input" class="table-form-textbox" data-role="none"></textarea>
+            </div>
+            <div>
+                <input type="button" onclick="button_click();" value="Decrypt">
+            </div>
+        </div>
+    </div>
+    <div class="description-block">
+        <b>Description</b>
+	<p>
+	</p>
+    </div>
+
+    <script src="js/cipher1.js"></script>
 </div>
 
         <script src="./js/display.js"></script>

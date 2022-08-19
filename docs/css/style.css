@@ -134,18 +134,25 @@ html
 {
 	grid-row: 2;
 	grid-column: 2;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.description
+.content-header
 {
 	grid-row: 2;
-	grid-column: 3;
+	grid-column: 2;
+	margin: 0;
 }
 
 .form-block
 {
-	margin-top: 10px;
-	max-width: 360px;
+	margin-top: 30px;
+	margin-right: 10px;
+	margin-bottom: -20px;
+	height: fit-content;
+	width: 350px;
+	max-width: 400px;
 	padding:10px;
 	border: 1px solid black;
 	border-radius: 3px;
@@ -153,6 +160,21 @@ html
 	flex-direction: column;
 	row-gap: 10px;
 	column-gap: 10px;
+}
+
+.description-block
+{
+        margin-top: 30px;
+	margin-right: 10px;
+	margin-bottom: -20px;
+	width: 350px;
+	min-height: 300px;
+	padding:10px;
+        row-gap: 10px;
+	column-gap: 10px;
+	border-radius: 3px;
+	background-image: linear-gradient(to top, rgba(140,140,255,0), rgba(140,140,255,.4));
+
 }
 
 .table-form
@@ -185,16 +207,12 @@ html
 {
 	margin-bottom: 5px;
 	margin-top: 5px;
-	width: 222px;
-       	height: 208px;
+	width: 220px;
+       	height: 200px;
        	resize:none
 }
 
 .small-number-input
 {
 	width: 220px;
-}
-
-#flair
-{
 }

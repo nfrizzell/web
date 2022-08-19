@@ -1,7 +1,7 @@
 @expand(header)
 @expand(body)
+<h3 class="content-header grid-item" ><u>Single-byte XOR</u></h3>
 <div class="content grid-item">
-    <h3 style="margin:0;"><u>Hex to base64</u></h3>
     <div style="background-color: ghostwhite; border-color: gainsboro;" class="form-block">
         <b>"Encrypt" text with single-byte XOR</b>
         <div class="table-form">
@@ -13,23 +13,33 @@
                 <label class="table-form-label">Byte: </label>
 		<input id="input2" class="small-number-input table-form-input" data-role="none">
             </div>
-
             <div class="table-form-row">
                 <label class="table-form-label">Output: </label>
                 <textarea id="output" class="table-form-textbox" data-role="none" readonly="readonly"></textarea>
             </div>
             <div>
-                <input type="button" onclick="button_click();" value="Convert">
+                <input type="button" onclick="button_click();" value="Encrypt">
             </div>
         </div>
     </div>
     <div style="background-color: ghostwhite; border-color: gainsboro;" class="form-block">
-        <b>Description</b>
-	<div>
-            This tool will return the XOR value of the hex string you provide against
-	    the single hex byte value (0x00 - 0xFF) you provide.
-	</div>
+        <b>"Decrypt" text with single-byte XOR</b>
+        <div class="table-form">
+            <div class="table-form-row">
+                <label class="table-form-label">Input: </label>
+                <textarea id="input" class="table-form-textbox" data-role="none"></textarea>
+            </div>
+            <div>
+                <input type="button" onclick="button_click();" value="Decrypt">
+            </div>
+        </div>
     </div>
+    <div class="description-block">
+        <b>Description</b>
+	<p>
+	</p>
+    </div>
+
     <script src="js/cipher1.js"></script>
 </div>
 @expand(footer)
