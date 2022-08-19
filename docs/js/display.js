@@ -1,7 +1,8 @@
 const grid = document.getElementById("grid-container");
 const sidebar = document.getElementById("sidebar-container");
 
-function toggleSidebar() {
+function toggle_sidebar() 
+{
     if (sidebar.style.visibility === "hidden") {
         sidebar.style.visibility = "visible";
         grid.style.gridTemplateColumns = "200px auto auto";
@@ -18,3 +19,5 @@ let width = window.innerWidth
 if (width < 768) {
     toggleSidebar();
 }
+
+

@@ -1,11 +1,17 @@
 const numberField = document.getElementById("number-field");
 const resultField = document.getElementById("result-field");
 
-function factorial() {
-    num = parseInt(numberField.value);
+function factorial(num) 
+{
     let result = 1;
-    for (i = 1; i <= num; i++) {
+    for (let i = 1; i <= num; i++) {
         result *= i;
     }
-    resultField.value = result.toString();
+    return result;
+}
+
+function button_click()
+{
+    num = parseInt(numberField.value);
+    resultField.value = factorial(num).toString();
 }
